@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Service 
 metadata: 
   name: catalogue
-  namespace: roboshop 
+  namespace: {{ .Values.namespace }} 
 spec: 
   selector: # selecting the Pod by using the same Pod labels 
     app: catalogue
