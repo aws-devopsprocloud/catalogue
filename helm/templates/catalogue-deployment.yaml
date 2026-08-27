@@ -4,14 +4,14 @@ metadata:
   name: catalogue # Deploymentset name 
   namespace: {{ .Values.namespace }} 
   labels: 
-    component: catalogue 
+    app: catalogue 
     project: roboshop 
     tier: app  
 spec: 
   replicas: {{ .Values.deployment.replicas }}
   selector:
     matchLabels: # replicaset labels 
-      component: catalogue 
+      app: catalogue 
       project: roboshop 
       tier: app  
 
@@ -19,7 +19,7 @@ spec:
     metadata:
       name: catalogue # Pod name# ACTUAL POD NAME WILL BE DIFFERENT AFTER Kubectl apply
       labels:
-        component: catalogue 
+        app: catalogue 
         project: roboshop 
         tier: app  
     spec: 

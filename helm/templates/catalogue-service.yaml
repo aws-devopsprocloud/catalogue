@@ -6,7 +6,7 @@ metadata:
   namespace: {{ .Values.namespace }} 
 spec: 
   selector: # selecting the Pod by using the same Pod labels 
-    component: catalogue
+    app: catalogue
     project: roboshop
     tier: app 
   ports:
