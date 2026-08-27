@@ -8,7 +8,7 @@ spec:
   selector: # selecting the Pod by using the same Pod labels 
     app: catalogue
     project: roboshop
-    tier: app 
+    tier: component 
   ports:
   - protocol: TCP
     port: 8080 # service port 

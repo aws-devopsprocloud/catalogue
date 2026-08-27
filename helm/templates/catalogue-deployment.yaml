@@ -6,14 +6,14 @@ metadata:
   labels: 
     app: catalogue 
     project: roboshop 
-    tier: app  
+    tier: component  
 spec: 
   replicas: {{ .Values.deployment.replicas }}
   selector:
     matchLabels: # replicaset labels 
       app: catalogue 
       project: roboshop 
-      tier: app  
+      tier: component  
 
   template: # Pod definition 
     metadata:
@@ -21,7 +21,7 @@ spec:
       labels:
         app: catalogue 
         project: roboshop 
-        tier: app  
+        tier: component  
     spec: 
       containers:
       - name: catalogue  # container name 
