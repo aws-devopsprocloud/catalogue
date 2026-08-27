@@ -6,9 +6,9 @@ metadata:
   namespace: {{ .Values.namespace }} 
 spec: 
   selector: # selecting the Pod by using the same Pod labels 
-    app: catalogue
+    component: catalogue
     project: roboshop
-    tier: component 
+    tier: app 
   ports:
   - protocol: TCP
     port: 8080 # service port 
