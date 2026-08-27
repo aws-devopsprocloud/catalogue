@@ -5,7 +5,7 @@ def configMap = [
     component: "catalogue"
 ]
 if (env.BRANCH_NAME.equalsIgnoreCase('main')){
-    nodejsEKSMain(configMap)
+    nodejsEKSMainPipeline(configMap)
 }
 else {
     nodejsEKSPipeline(configMap)
